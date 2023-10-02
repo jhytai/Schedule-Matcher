@@ -18,10 +18,16 @@ My submission for CPSC 335 - Project 1: Schedule Matcher
 * To run the executable file from a Linux terminal use the command $./ScheduleMatcher
 * Below is an example of a case input:
 
+Case input:
+
 [['12:00':'13:00'],['16:00':'18:00']]
+
 ['9:00','19:00']
+
 [['9:00':'10:30'],['12:20':'14:30'],['14:30':'15:00'],['16:00':'17:00']]
+
 ['9:00','18:30']
+
 30
 
 Expected output:
