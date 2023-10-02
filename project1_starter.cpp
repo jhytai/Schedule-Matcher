@@ -77,3 +77,19 @@ int     timeToMinutes(const string &time)
     return (hour * 60 + min);
 
 }  // end of "timeToMinutes"
+
+
+
+// ==== minutesToTime =========================================================
+//
+// ============================================================================
+
+string  minutesToTime(int minutes)
+{
+    char    buffer[6];
+
+    sprintf(buffer, "%02d:%02d", (minutes / 60), (minutes % 60));
+
+    return string(buffer);
+
+}  // end of "minutesToTime"
