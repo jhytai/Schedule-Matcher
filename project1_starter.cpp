@@ -1,3 +1,7 @@
+// ============================================================================
+// File: project1_starter.cpp
+// ============================================================================
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -11,7 +15,17 @@ struct  Interval
     int end;
 };
 
+// Function prototypes
+int                 timeToMinutes(const string &time);
+string              minutesToTime(int minutes);
+vector<Interval>    mergeIntervals(const vector<Interval> &intervals);
+vector<Interval>    availableIntervals(const vector<Interval> &merged,
+                                       int workStart, int workEnd);
 
+
+// ==== main ==================================================================
+//
+// ============================================================================
 
 int main()
 {
@@ -44,4 +58,5 @@ int main()
 
         return 0;
         }
-}
+
+}  // end of "main"
