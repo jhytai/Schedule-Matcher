@@ -135,3 +135,33 @@ vector<Interval>    mergeIntervals(const vector<Interval> &intervals)
         }
 
 }  // end of "mergeIntervals"
+
+
+
+// ==== availableIntervals =========================================================
+//
+// ============================================================================
+
+vector<Interval>    availableIntervals(const vector<Interval> &merged,
+                                       int workStart, int workEnd)
+{
+    vector<Interval>    result;
+    int                 prevEnd = workStart;
+
+    for (const auto &interval : merged)
+        {
+        if (prevEnd < interval.start)
+            {
+            result.push_back({prevEnd, interval.start});
+            }
+        prevEnd = interval.end;
+        }
+
+    if (prevEnd < workEnd)
+        {
+        result.push_back({prevEnd, workEnd});
+        }
+
+    return result;
+
+}  // end of "availableIntervals"
