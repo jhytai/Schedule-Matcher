@@ -52,7 +52,7 @@ int main()
             {
             // algorithm code goes here
             }
-        
+
         fin.close();
         fout.close();
 
@@ -93,3 +93,45 @@ string  minutesToTime(int minutes)
     return string(buffer);
 
 }  // end of "minutesToTime"
+
+
+
+// ==== mergeIntervals =========================================================
+//
+// ============================================================================
+
+vector<Interval>    mergeIntervals(const vector<Interval> &intervals)
+{
+    int                 start;
+    int                 end;
+    vector<Interval>    result;
+
+    if (intervals.empty())
+        {
+        return {};
+        }
+    else
+        {
+        start = intervals[0].start;
+        end = intervals[0].end;
+
+        for (const auto &interval : intervals)
+            {
+            if (interval.start <= end)
+                {
+                end = max(end, interval.end);
+                }
+            else
+                {
+                result.push_back({start, end});
+                start = interval.start;
+                end = interval.end;
+                }
+            }
+
+        result.push_back({start, end});
+
+        return result;
+        }
+
+}  // end of "mergeIntervals"
