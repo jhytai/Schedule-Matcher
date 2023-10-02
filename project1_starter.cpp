@@ -60,3 +60,20 @@ int main()
         }
 
 }  // end of "main"
+
+
+
+// ==== timeToMinutes =========================================================
+//
+// ============================================================================
+
+int     timeToMinutes(const string &time)
+{
+    int hour;
+    int min;
+
+    sscanf(time.c_str(), "%d:%d", &hour, &min);
+
+    return (hour * 60 + min);
+
+}  // end of "timeToMinutes"
