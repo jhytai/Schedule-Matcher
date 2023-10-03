@@ -37,4 +37,7 @@ Expected output:
 * Each case is consisted of 5 lines in the "input.txt" file.
 * Each case should be separated my a new line.
 * The time format, and interval fromat should follow the same pattern as in the example.
+* The inputed schedule should already be sorted.
 * The program only works for schedules within the same day.
+* Outputs will be stored in the "output.txt" file.
+* An "input.txt" file is provided with 10 cases as example, and the generated "output.txt" respectively.

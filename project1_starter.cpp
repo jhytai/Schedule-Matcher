@@ -111,6 +111,19 @@ int main()
                 sort(combinedUnavailable.begin(), combinedUnavailable.end(), [](const Interval &a, const Interval &b)
                     { return a.start < b.start; });
 
+                for (auto &interval : combinedUnavailable)
+                    {
+                    interval.start = max(interval.start, max(workStart1, workStart2));
+                    interval.end = min(interval.end, min(workEnd1, workEnd2));
+                    }
+
+                combinedUnavailable.erase(
+                    remove_if(combinedUnavailable.begin(), combinedUnavailable.end(),
+                        [&](const Interval& interval) {
+                            return interval.start >= interval.end;
+                        }),
+                    combinedUnavailable.end());
+
                 cout << "\nDEBUG LOG: combinedUnavailable elements\n";
                 for (int index = 0; index < combinedUnavailable.size(); ++index)
                     {
@@ -152,7 +165,7 @@ int main()
                         first = false;
                         }
                     }
-                fout << "]" << endl;
+                fout << "]" << endl << endl;
                 }
 
             // Reseting for new case
