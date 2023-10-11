@@ -6,7 +6,7 @@ My submission for CPSC 335 - Project 1: Schedule Matcher
 
 * Institution: California State University Fullerton (CSUF)
 * Course: CPSC 335 - Algorithm Engineering (Fall 2023, Section 02, 13543)
-* Name: Josue Tai
+* Name: Josue Han Yan Tai Liu
 * Email: josue.tai@csu.fullerton.edu
 
 # How to run the program
