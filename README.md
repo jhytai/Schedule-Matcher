@@ -6,16 +6,15 @@ My submission for CPSC 335 - Project 1: Schedule Matcher
 
 * Institution: California State University Fullerton (CSUF)
 * Course: CPSC 335 - Algorithm Engineering (Fall 2023, Section 02, 13543)
-* Name: Josue Han Yan Tai Liu
-* CWID: 885540690
+* Name: Josue Tai
 * Email: josue.tai@csu.fullerton.edu
 
 # How to run the program
 
-* Programming language used is C++.
+* The programming language used is C++.
 * The executable file is already compiled to run from a Linux terminal.
-* If needed you can recompile again from a Linux terminal by usign the command $g++ project1_starter.cpp -o ScheduleMatcher
-* To run the executable file from a Linux terminal use the command $./ScheduleMatcher
+* If needed, you can recompile again from a Linux terminal by using the command $g++ project1_starter.cpp -o ScheduleMatcher
+* To run the executable file from a Linux terminal, use the command $./ScheduleMatcher
 * Below is an example of a case input:
 
 Case input:
@@ -34,10 +33,10 @@ Expected output:
 
 [['10:30':'12:00'],['15:00':'16:00'],['18:00':'18:30']]
 
-* Each case is consisted of 5 lines in the "input.txt" file.
-* Each case should be separated my a new line.
-* The time format, and interval fromat should follow the same pattern as in the example.
-* The inputed schedule should already be sorted.
+* Each case consists of 5 lines in the "input.txt" file.
+* Each case should be separated by a new line.
+* The time format and interval format should follow the same pattern as in the example.
+* The input schedule should already be sorted.
 * The program only works for schedules within the same day.
 * Outputs will be stored in the "output.txt" file.
-* An "input.txt" file is provided with 10 cases as example, and the generated "output.txt" respectively.
+* An "input.txt" file is provided with 10 cases as an example, and the generated "output.txt" respectively.
